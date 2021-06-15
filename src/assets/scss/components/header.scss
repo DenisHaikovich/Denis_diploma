@@ -1,0 +1,167 @@
+// для каждого компонента нужно импортить переменные, чтобы их использовать
+@import "../main/parameters";
+
+.header {
+    background: url("../imgs/bg.jpg") right bottom no-repeat;
+    background-size: cover;
+    height: 953.59px;
+}
+
+//.container {
+   // max-width: 1140px;
+   // margin: 0 auto;   
+//}
+
+.header__iner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__iner  {
+    margin: 51px 136px 27px 0px;
+}
+
+.logo {}
+
+.logo__img {}
+
+.nav {}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin: 55px 49px 32px 0;
+}
+
+.nav__link {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #575859;
+    text-decoration: none;
+    }
+
+.btn {
+    background: #3988FF;
+    border-radius: 5px;
+    width: 134px;
+    height: 59px;
+    padding: 15px 30px;
+    margin: 40px 0 17px 142px;
+}
+
+.btn__text {
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 160%;
+color: #FFFFFF;
+}
+
+.btn__iner {
+    text-decoration: none;
+}
+
+.section__header {
+    display: flex;
+    position: relative;
+}
+
+.ideas {}
+
+.ideas__title {
+    display: inline-block;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 69px;
+    line-height: 120%;
+    color: #050C26;
+    width: 550px;
+    height: 249px;
+    margin: 141px 0 27px 0;
+}
+
+.ide {
+    color: #3988FF;
+}
+
+.ideas__text {
+    display: inline-block;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: #575859;
+    width: 496px;
+    height: 87px;
+    margin: 19px 0 14px 0;
+}
+
+.play {
+    display: inline-flex;
+}
+
+.play__bg {
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.play__img {
+    
+}
+
+.play__text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #050C26;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.men {
+    position: relative;
+    margin-left: -120px;
+}
+
+.men__img {
+    position: relative;
+    z-index: 1;
+}
+    
+
+
+.ellipse__img {
+    position: absolute;
+    left: 195px;
+    top: 70px;
+}
+
+.img1 {
+    position: absolute;
+    left: 630px;
+    top: 135px;
+}
+
+.img2 {
+    position: absolute;
+    left: 300px;
+    top: 160px;
+}
+
+.img-fon {
+    position: absolute;
+    left: 193px;
+    top: 260px;
+}

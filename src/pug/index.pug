@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="./assets/css/app.css")
+    body 
+        header.header 
+            div.container
+                div.header__iner
+                    div.logo__iner  
+                        a(href="index.pug").logo 
+                            img(src="./assets/imgs/INNOVATED.svg", alt="img").logo__img   
+                    nav.nav 
+                        ul.nav__list 
+                            li.nav__item 
+                                a(href="#!").nav__link Home   
+                            li.nav__item 
+                                a(href="#!").nav__link About       
+                            li.nav__item 
+                                a(href="#!").nav__link Features
+                            li.nav__item 
+                                a(href="#!").nav__link Services 
+                            li.nav__item 
+                                a(href="#!").nav__link Pricing
+                    div.btn 
+                        a(href="#!").btn__iner 
+                            span.btn__text Contact                  
+                div.section__header
+                    div.ideas 
+                        h1.ideas__title We target the audience with our <span class="ide">ideas</span>.
+                        p.ideas__text Advertising is relied upon to impact the states of mind, expectations and conduct of the customer’s clients and in this way increment .
+                        div.play 
+                            div.play__bg
+                                img(src="./assets/imgs/play (2).svg", alt="img").play__img
+                            span.play__text Watch Video
+                    div.men 
+                        img(src="./assets/imgs/men.svg", alt="img").men__img 
+                        img(src="./assets/imgs/Ellipse 11.svg", alt="img").ellipse__img  
+                        img(src="./assets/imgs/img1.svg", alt="img").img1 
+                        img(src="./assets/imgs/img2.svg", alt="img").img2
+                        img(src="./assets/imgs/img-fon.svg", alt="img").img-fon 
+        include components/fs-section
+        include components/second-section 
+        include components/third-section
+        include components/fourth-section
