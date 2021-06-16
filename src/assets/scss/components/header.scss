@@ -4,7 +4,7 @@
 .header {
     background: url("../imgs/bg.jpg") right bottom no-repeat;
     background-size: cover;
-    height: 953.59px;
+    min-height: 100vh;
 }
 
 //.container {
@@ -15,11 +15,11 @@
 .header__iner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0 3rem;
 }
 
-.logo__iner  {
-    margin: 51px 136px 27px 0px;
-}
+.logo__iner  {}
 
 .logo {}
 
@@ -32,7 +32,7 @@
 }
 
 .nav__item {
-    margin: 55px 49px 32px 0;
+    margin: 0 49px 0 0;
 }
 
 .nav__link {
@@ -47,25 +47,24 @@
     }
 
 .btn {
+    display: inline-block;
     background: #3988FF;
     border-radius: 5px;
-    width: 134px;
-    height: 59px;
     padding: 15px 30px;
-    margin: 40px 0 17px 142px;
+    text-decoration: none;
+}
+
+.btn--big {
+
 }
 
 .btn__text {
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 160%;
-color: #FFFFFF;
-}
-
-.btn__iner {
-    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
 }
 
 .section__header {
@@ -107,11 +106,15 @@ color: #FFFFFF;
 
 .play {
     display: inline-flex;
+    align-items: center;
 }
 
 .play__bg {
-    margin-top: -25px;
-    margin-left: -25px;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background: #FFFFFF url('') center no-repeat;
+    box-shadow: 0px 0px 30px #FFE6E6;
 }
 
 .play__img {
@@ -127,7 +130,6 @@ color: #FFFFFF;
     color: #050C26;
     display: inline-block;
     margin-left: 25px;
-    margin-top: 25px;
 }
 
 .men {
@@ -155,9 +157,29 @@ color: #FFFFFF;
 }
 
 .img2 {
+    display: inline-block;
     position: absolute;
     left: 300px;
     top: 160px;
+    //@at-root/
+    transform: translate(0); 
+    transition: transform ease 0.4s;
+    // animation: rotateAnim linear 5s infinite;
+    &:hover {
+       transform: translate(360deg); 
+    }
+ }
+
+@keyframes rotateAnim {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(0) scale(1);
+    }
 }
 
 .img-fon {

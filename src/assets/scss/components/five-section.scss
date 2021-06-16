@@ -1,0 +1,105 @@
+@import "../main/parameters"; 
+
+.five-section {}
+
+.five-section__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 140%;
+    color: #050C26;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.five-section__text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    display: block;
+    max-width: 715px;
+    max-height: 58px;
+    margin: 25px auto 70px auto;
+}
+
+.marketing-officer {
+    max-width: 100%;
+    max-height: 374px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    background: url("../imgs/Vector 2.svg") right bottom
+}
+
+.marketing-officer__blok1 {
+    position: relative;
+}
+
+.marketing-officer__blok2 {
+    position: relative;
+}
+
+.blok__text {
+    max-width: 371px;
+    max-height: 87px;
+    margin: 60px 90px 43px 115.06px;
+}
+
+.blok__text1 {
+    max-width: 371px;
+    max-height: 87px;
+    margin: 60px 68px 43px 107px;
+}
+
+.marketing-officer__text {
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #050C26;
+}
+
+.marketing-officer__img {
+    position: absolute;
+    left: 71px;
+    top: 168px
+}
+
+.marketing-officer__img2 {
+    position: absolute;
+    left: 71px;
+    top: 168px
+}
+
+.marketing-officer__name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #050C26;
+    display: block;
+    margin: 0 0 5px 189px;
+}
+
+.marketing-officer__title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #575859;
+    display: block;
+    margin: 0 0 101.71px 188.73px;
+}
+
+.blok__text-img {
+    position: absolute;
+    left: 66px;
+    top: 47px;
+}
