@@ -5,12 +5,8 @@
     background: url("../imgs/bg.jpg") right bottom no-repeat;
     background-size: cover;
     min-height: 100vh;
+    overflow: hidden;
 }
-
-//.container {
-   // max-width: 1140px;
-   // margin: 0 auto;   
-//}
 
 .header__iner {
     display: flex;
@@ -75,7 +71,7 @@
 .ideas {}
 
 .ideas__title {
-    display: inline-block;
+    display: block;
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -83,7 +79,7 @@
     line-height: 120%;
     color: #050C26;
     width: 550px;
-    height: 249px;
+    //max-height: 249px;
     margin: 141px 0 27px 0;
 }
 
@@ -92,7 +88,7 @@
 }
 
 .ideas__text {
-    display: inline-block;
+    display: block;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
@@ -100,7 +96,7 @@
     line-height: 160%;
     color: #575859;
     width: 496px;
-    height: 87px;
+    //max-height: 87px;
     margin: 19px 0 14px 0;
 }
 
@@ -115,6 +111,7 @@
     border-radius: 50%;
     background: #FFFFFF url('') center no-repeat;
     box-shadow: 0px 0px 30px #FFE6E6;
+    padding: 24px 24px 24px 30px;
 }
 
 .play__img {
@@ -134,41 +131,21 @@
 
 .men {
     position: relative;
-    margin-left: -120px;
 }
+
 
 .men__img {
-    position: relative;
-    z-index: 1;
+}
+
+.men1__img {
+    transform: translate(90px, 105px);
 }
     
-
-
-.ellipse__img {
+.img__fon2 {
     position: absolute;
-    left: 195px;
-    top: 70px;
+    left: 193px;
+    top: 260px;
 }
-
-.img1 {
-    position: absolute;
-    left: 630px;
-    top: 135px;
-}
-
-.img2 {
-    display: inline-block;
-    position: absolute;
-    left: 300px;
-    top: 160px;
-    //@at-root/
-    transform: translate(0); 
-    transition: transform ease 0.4s;
-    // animation: rotateAnim linear 5s infinite;
-    &:hover {
-       transform: translate(360deg); 
-    }
- }
 
 @keyframes rotateAnim {
     0% {
@@ -187,3 +164,143 @@
     left: 193px;
     top: 260px;
 }
+
+@media (max-width: $md - 1) {
+    .section__header {
+        flex-wrap: wrap;
+    }
+
+    .ideas__title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 5.8rem;
+        margin: 41px 0 27px;
+    }
+
+    .ideas__text {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 30px;
+    }
+
+    .men {
+        margin-left: 0;
+    }
+    .men1__img {
+        transform: translate(144px, 105px);
+    }
+
+    .header__burger {
+        display: none;
+    }
+}
+
+@media (max-width: $sm - 1) {
+    .ideas__title {
+        font-size: 4.8rem;
+    }
+
+    .men {
+        margin-left: -21%;
+    }
+
+    .logo__iner {
+        display: flex;
+    }
+
+    .nav__list {
+        display: none;
+    }
+    .header__burger{
+        display: none;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .header__burger::before,
+    .header__burger::after {
+        content: '';
+        background: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .header__burger::before{
+        top: 0;
+    }    
+    .header__burger::after {
+        bottom: 0;
+    } 
+    .burger {
+        background: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;   
+    }
+
+}    
+
+@media (max-width: $xs - 1) {
+    .ideas__title {
+        font-size: 3.2rem;
+        margin: 0 0 1rem;
+    }
+    .ideas__text {
+        font-size: 1.6rem;
+    }
+    .men1__img {
+        transform: translate(42px, 3px);
+    }
+    .logo__iner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__list {display: none;}
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .header__burger::before,
+    .header__burger::after {
+        content: '';
+        background: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }    
+    .header__burger::before{
+        top: 0;
+    }    
+    .header__burger::after {
+        bottom: 0;
+    } 
+    .burger {
+        background: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;   
+    }
+
+
+}
+

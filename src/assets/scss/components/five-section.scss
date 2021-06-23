@@ -55,6 +55,8 @@
     margin: 60px 68px 43px 107px;
 }
 
+.block__title {}
+
 .marketing-officer__text {
     font-family: Poppins;
     font-style: italic;
@@ -102,4 +104,10 @@
     position: absolute;
     left: 66px;
     top: 47px;
+}
+
+@media (max-width: $md - 1) {
+    .marketing-officer {
+        //display: block;
+    }
 }
